@@ -7,7 +7,7 @@ services:
       - ./data:/app/data
       - ~/.ssh:/root/.ssh:ro
     environment:
-      OC_TOKEN: "REDACTED_OC_TOKEN"
+      OC_TOKEN: "${OC_TOKEN}"
       SSH_USER: "jamil"
       SSH_KEY_PATH: "/root/.ssh/id_ed25519"
       PI1_HOST: "192.0.2.101"
