@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- dark background -->
+  <rect width="32" height="32" rx="4" fill="#080f08"/>
+  <!-- subtle border -->
+  <rect width="32" height="32" rx="4" fill="none" stroke="#0f2a0f" stroke-width="1.5"/>
+  <!-- > caret -->
+  <polyline points="5,10 13,16 5,22" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- _ underscore cursor -->
+  <line x1="16" y1="22" x2="27" y2="22" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
