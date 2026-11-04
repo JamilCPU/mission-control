@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ─── Pi Fleet Config ──────────────────────────────────────────────────────────
-const SSH_USER = process.env.SSH_USER     || 'jamil';
+const SSH_USER = process.env.SSH_USER     || 'pi';
 const SSH_KEY  = process.env.SSH_KEY_PATH || (process.env.HOME + '/.ssh/id_ed25519');
 const OC_TOKEN = process.env.OC_TOKEN     || 'REDACTED_OC_TOKEN';
 const PORT     = parseInt(process.env.PORT || '8095');

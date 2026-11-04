@@ -8,11 +8,11 @@ services:
       - ~/.ssh:/root/.ssh:ro
     environment:
       OC_TOKEN: "${OC_TOKEN}"
-      SSH_USER: "jamil"
+      SSH_USER: "${SSH_USER:-pi}"
       SSH_KEY_PATH: "/root/.ssh/id_ed25519"
-      PI1_HOST: "192.0.2.101"
-      PI2_HOST: "192.0.2.102"
-      PI3_HOST: "192.0.2.103"
+      PI1_HOST: "${PI1_HOST:-192.0.2.101}"
+      PI2_HOST: "${PI2_HOST:-192.0.2.102}"
+      PI3_HOST: "${PI3_HOST:-192.0.2.103}"
       PORT: "8095"
       USE_WSL_SSH: "false"
     restart: unless-stopped
